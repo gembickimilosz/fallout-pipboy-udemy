@@ -7,11 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pip-Boy</title>
 
-    <link href="css/pipboy.app.css">
-    <link href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pipboy.app.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand navbar-light">
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Stat</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inv</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Data</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Map</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Radio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#status" class="nav-link" data-toggle="tab" role="tab">STATUS</a>
+        </li>
+        <li class="nav-item">
+            <a href="#special" class="nav-link" data-toggle="tab">SPECIAL</a>
+        </li>
+        <li class="nav-item">
+            <a href="#perks" class="nav-link" data-toggle="tab">PERKS</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="status" role="tabpanel">
+            <div class="center-image">
+                <img src="images/vaultboy.png">
+            </div>
+        </div>
+        <div class="tab-pane" id="special" role="tabpanel">
+            SPECIAL
+        </div>
+        <div class="tab-pane" id="perks" role="tabpanel">
+            PERKS
+        </div>
+    </div>
+
 
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
