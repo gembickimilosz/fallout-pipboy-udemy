@@ -1,0 +1,12 @@
+.nav-link {
+    text-transform: uppercase;
+}
+
+.center-image img {
+    margin: auto;
+    display: block;
+    position: relative;
+    max-height: 300px;
+    margin-top: 100px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(10) brightness(1) contrast(.9);
+}
