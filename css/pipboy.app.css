@@ -1,10 +1,66 @@
+@font-face {
+    font-family: Pipboy;
+    src: url('../fonts/monofonto.otf');
+}
+
+/* Body of website */
 body {
+    font-family: Pipboy, sans-serif;
     color: #64fa85;
     background: #272b23;
 }
 
+body::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .4) 1px, transparent 2px, transparent 1px);
+    opacity: .3;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+/* Navigations for the page */
+.navbar {
+    border-bottom: 2px solid;
+    margin: 0px 10px;
+}
+
+.navbar::before,
+.navbar::after {
+    height: 5px;
+    width: 2px;
+    content: "";
+    position: absolute;
+    display: block;
+    background: #64fa85;
+    bottom: -6px;
+}
+
+.navbar::before {
+    left: 0px;
+}
+
+.navbar::after {
+    right: 0px;
+}
+
 ul>li.nav-item>a.nav-link {
     color: #64fa85 !important;
+}
+
+.navbar-nav {
+    width: 100%;
+    margin: -10px;
+}
+
+.navbar-light ul.navbar-nav>li {
+    display: block;
+    position: relative;
+    width: 100%;
 }
 
 .nav-link {
@@ -21,6 +77,7 @@ ul>li.nav-item>a.nav-link {
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(10) brightness(1) contrast(.9);
 }
 
+/* Pip-Boy Footer */
 .pipboy-footer {
     position: fixed;
     bottom: 0;
