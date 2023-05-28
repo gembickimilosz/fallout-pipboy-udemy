@@ -24,13 +24,13 @@ body::after {
 }
 
 /* Navigations for the page */
-.navbar {
+.navbar.navbar-light {
     border-bottom: 2px solid;
     margin: 0px 10px;
 }
 
-.navbar::before,
-.navbar::after {
+.navbar.navbar-light::before,
+.navbar.navbar-light::after {
     height: 5px;
     width: 2px;
     content: "";
@@ -40,11 +40,11 @@ body::after {
     bottom: -6px;
 }
 
-.navbar::before {
+.navbar.navbar-light::before {
     left: 0px;
 }
 
-.navbar::after {
+.navbar.navbar-light::after {
     right: 0px;
 }
 
@@ -138,5 +138,34 @@ ul>li.nav-item>a.nav-link {
     position: fixed;
     bottom: 0;
     width: calc(100% - 20px);
-    margin: 10px;
+    margin: 5px 10px;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container-fluid.pipboy-footer .col-6 {
+    background: rgba(99, 250, 133, .1);
+    margin: 0px 3px;
+    flex: 0 0 48%;
+}
+
+.container-fluid.pipboy-footer .col-3 {
+    background: rgba(99, 250, 133, .1);
+}
+
+/* Level Progress in Footer */
+.level-progress {
+    width: 70%;
+    height: 10px;
+    border: 2px solid;
+    display: inline-block;
+}
+
+.level-progress-indicator {
+    height: 6px;
+    background: #63fa85;
+    position: relative;
+    width: 150px;
 }
