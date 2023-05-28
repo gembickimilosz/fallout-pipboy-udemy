@@ -19,12 +19,35 @@
     padding: 5px 10px;
     border-radius: 2px;
     color: #64fa85;
+    padding-left: 25px;
 }
 
 .item-list li a:hover {
     text-decoration: none;
     background: #64fa85;
     color: #272b23;
+}
+
+.item-list a.active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #64fa85;
+    left: 75px;
+    margin-top: 6px;
+}
+
+.item-list a.active:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #272b23;
+    left: 75px;
+    margin-top: 6px;
 }
 
 /* Item Stats */
