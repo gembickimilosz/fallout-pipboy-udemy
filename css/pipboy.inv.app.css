@@ -1,0 +1,53 @@
+/* Item Lists */
+
+#status.tab-pane.full {
+    width: 100%;
+    max-width: 85%;
+    margin-top: -40px;
+}
+
+.item-list {
+    float: left;
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+.item-list li a {
+    display: block;
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: #64fa85;
+}
+
+.item-list li a:hover {
+    text-decoration: none;
+    background: #64fa85;
+    color: #272b23;
+}
+
+/* Item Stats */
+.tab-pane.full {
+    height: calc(100vh -180px);
+}
+
+.item-stats {
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    width: 200px;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.item-stats .row .col-12 {
+    background: rgba(99, 250, 133, .1);
+    margin-bottom: 2px;
+}
