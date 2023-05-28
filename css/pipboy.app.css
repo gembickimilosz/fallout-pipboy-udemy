@@ -161,6 +161,7 @@ ul>li.nav-item>a.nav-link {
     bottom: 0;
     width: calc(100% - 20px);
     margin: 5px 10px;
+    font-size: 22px;
 }
 
 .container-fluid {
@@ -171,22 +172,29 @@ ul>li.nav-item>a.nav-link {
     background: rgba(99, 250, 133, .1);
     margin: 0px 3px;
     flex: 0 0 48%;
+    padding: 5px 10px;
 }
 
 .container-fluid.pipboy-footer .col-3 {
     background: rgba(99, 250, 133, .1);
+    padding: 5px 10px;
 }
+
+.container-fluid.pipboy-footer .col-3 .text-right {
+    text-align: right;
+}
+
 
 /* Level Progress in Footer */
 .level-progress {
     width: 70%;
-    height: 10px;
+    height: 16px;
     border: 2px solid;
     display: inline-block;
 }
 
 .level-progress-indicator {
-    height: 6px;
+    height: 12px;
     background: #63fa85;
     position: relative;
 }
