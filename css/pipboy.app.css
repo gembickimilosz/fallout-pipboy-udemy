@@ -73,6 +73,27 @@ ul>li.nav-item>a.nav-link {
     text-transform: uppercase;
 }
 
+/* Vault Boy Positioning - with surrounding stuff */
+
+.center-image {
+    position: absolute;
+    margin-left: 100px;
+}
+
+.stat-bar {
+    width: 60px;
+    margin: auto;
+}
+
+.stat-bars>.row {
+    margin-bottom: 100px;
+}
+
+#status {
+    max-width: 400px;
+    margin: auto;
+}
+
 /* Navbar effect as selected */
 .nav-item.active::before {
     content: "";
@@ -131,6 +152,7 @@ ul>li.nav-item>a.nav-link {
     max-height: 300px;
     margin-top: 100px;
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(10) brightness(1) contrast(.9);
+    margin-top: 40px;
 }
 
 /* Pip-Boy Footer */
@@ -167,5 +189,34 @@ ul>li.nav-item>a.nav-link {
     height: 6px;
     background: #63fa85;
     position: relative;
-    width: 150px;
+}
+
+/* Level Progress Container (how full it is) */
+
+.w10 {
+    width: 10%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.w100 {
+    width: 100%;
 }
